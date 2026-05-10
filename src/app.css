@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/fonts/DepartureMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #181515;      /* Dark grey background */
+  --fg: #a9a9b3;      /* Light grey/silver text */
+  --accent: #f2a272;  /* Terminal Orange accent */
+  --border: #4d4e51;  /* Muted border line */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Departure Mono', 'Fira Code', 'Courier New', monospace;
+  line-height: 1.54;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--fg);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+h2::before {
+  content: "[+] ";
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+strong {
+  color: var(--fg);
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 3rem 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
