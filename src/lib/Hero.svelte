@@ -70,7 +70,7 @@
     background-color: var(--accent);
     z-index: -1;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: right;
     transition: transform 0.3s ease;
   }
 
@@ -80,5 +80,6 @@
 
   .feature-block:hover h3::before {
     transform: scaleX(1);
+    transform-origin: left;
   }
 </style>
