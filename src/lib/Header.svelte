@@ -45,6 +45,7 @@
   nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin: 0;
     padding: 0;
@@ -62,11 +63,16 @@
     background-color: var(--accent);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     header {
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
+      padding: 2rem 1.5rem;
+      gap: 1.5rem;
+    }
+
+    nav ul {
+      gap: 1rem 1.2rem;
     }
   }
 </style>
