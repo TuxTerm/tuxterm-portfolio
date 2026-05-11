@@ -68,13 +68,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background-color: var(--accent);
     z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
+    transition: width 0.3s ease;
   }
 
   nav a:hover {
@@ -82,8 +80,7 @@
   }
 
   nav a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
