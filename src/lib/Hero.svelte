@@ -1,7 +1,7 @@
 <section id="about">
   <h1><span class="highlight">^_^ Hello World.</span></h1>
   <p>
-    Hey, there! I'm <strong>Rishu Raj</strong>. I am an organized mess of some random molecules existing to form something called 'life' in human form. This life was born in Haryana, India and this life is currently 17 years old (though according to science, almost all my cells have been replaced by new cells, so am I me even?).
+    Hey, there! I'm <strong>Rishu Raj</strong>. I am an organized mess of some random molecules existing to form something called 'life' in human form.
   </p>
 
   <h3>The Tech Side</h3>
@@ -12,7 +12,7 @@
 
   <h3>My System</h3>
   <p>
-    I use Linux on my system. A detailed description of applications and tools I use is available at <a href="#skills">Skills</a>.
+    I use Linux on my system. A detailed description of applications and tools I use is available at <a href="#/tools">Tools</a>.
   </p>
   
   <br/>

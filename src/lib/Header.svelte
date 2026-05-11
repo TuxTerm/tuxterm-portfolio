@@ -13,6 +13,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#/tools">Tools</a></li>
       <li><a href="#/blog">Blog</a></li>
     </ul>
   </nav>
@@ -23,8 +24,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     margin-bottom: 2rem;
+    width: 100%;
   }
 
   .logo a {

@@ -8,6 +8,7 @@
   import Projects from './lib/Projects.svelte';
   import Contact from './lib/Contact.svelte';
   import Blog from './lib/Blog.svelte';
+  import Tools from './lib/Tools.svelte';
 
   let currentHash = $state('');
 
@@ -21,14 +22,18 @@
   });
 
   let isBlog = $derived(currentHash === '#/blog');
+  let isTools = $derived(currentHash === '#/tools');
+  let currentView = $derived(currentHash);
 </script>
 
+<Header />
 <div class="container">
-  <Header />
-  {#key isBlog}
+  {#key currentView}
     <main in:fade={{ duration: 300 }}>
       {#if isBlog}
         <Blog />
+      {:else if isTools}
+        <Tools />
       {:else}
         <Hero />
         <Experience />
