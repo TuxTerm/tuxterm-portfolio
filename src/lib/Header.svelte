@@ -59,8 +59,8 @@
   }
 
   nav a:hover {
-    color: var(--accent);
-    background: transparent;
+    color: var(--bg);
+    background-color: var(--accent);
   }
 
   @media (max-width: 768px) {
