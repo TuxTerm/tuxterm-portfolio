@@ -46,12 +46,5 @@ To run this project locally, make sure you have [Node.js](https://nodejs.org/) i
    ```
    *This will generate a `dist/` directory with the optimized static assets.*
 
-## 👤 About Me
-
-I am **Rishu Raj**, a 17-year-old tech enthusiast from Haryana, India. I daily drive Linux, write NuShell configs, and spend my time exploring Information Security, ethical hacking, and reverse engineering.
-
-- **GitHub:** [@TuxTerm](https://github.com/TuxTerm)
-- **LinkedIn:** [Rishu Raj](https://linkedin.com/in/rishuraj0175)
-
 ---
 *© 2026 Rishu Raj. Powered by Svelte.*
