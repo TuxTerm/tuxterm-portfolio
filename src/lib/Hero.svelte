@@ -69,11 +69,12 @@
     height: 100%;
     background-color: var(--accent);
     z-index: -1;
-    transition: width 0.3s ease;
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   .feature-block:hover h3 {
     color: var(--bg);
+    transition-delay: 0.1s;
   }
 
   .feature-block:hover h3::before {
