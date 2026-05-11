@@ -52,36 +52,15 @@
   }
 
   nav a {
-    position: relative;
-    display: inline-block;
     text-decoration: none;
     border: none;
     color: var(--fg);
     font-size: 1rem;
-    padding: 0.1rem 0.3rem;
-    z-index: 1;
-    transition: color 0.3s ease;
-  }
-
-  nav a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--accent);
-    z-index: -1;
-    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   nav a:hover {
     color: var(--bg);
-    transition-delay: 0.1s;
-  }
-
-  nav a:hover::before {
-    width: 100%;
+    background-color: var(--accent);
   }
 
   @media (max-width: 768px) {
