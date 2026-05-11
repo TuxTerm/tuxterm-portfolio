@@ -1,43 +1,57 @@
-# Svelte + Vite
+# tuxterm-portfolio 🚀
 
-This template should help get you started developing with Svelte in Vite.
+> *An organized mess of some random molecules existing to form something called 'life' in human form.*
 
-## Recommended IDE Setup
+Welcome to the source code of my personal portfolio website! It is a minimalist, terminal-themed Single Page Application (SPA) designed to showcase my projects, skills, and write-ups as an aspiring Cybersecurity Professional.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## ✨ Features
 
-## Need an official Svelte framework?
+- **Terminal Aesthetic:** Monospace fonts, dark background (`#181515`), and a striking terminal orange accent (`#f2a272`).
+- **Smooth Navigation:** Native CSS smooth scrolling across various sections.
+- **Dynamic Elements:** Automatically calculated age and interactive, sliding CSS highlights on hover.
+- **Responsive Design:** Fully optimized for both desktop and mobile viewing.
+- **Lightweight & Fast:** Built with Svelte 5 runes and Vite for lightning-fast HMR and minimal bundle sizes.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## 🛠️ Tech Stack
 
-## Technical considerations
+- **Framework:** [Svelte 5](https://svelte.dev/)
+- **Bundler:** [Vite](https://vitejs.dev/)
+- **Styling:** Vanilla CSS (CSS Variables, Flexbox, Pseudo-elements)
+- **Deployment:** GitHub Pages (Planned)
 
-**Why use this over SvelteKit?**
+## 🚀 Local Development
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+To run this project locally, make sure you have [Node.js](https://nodejs.org/) installed.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/TuxTerm/tuxterm-portfolio.git
+   cd tuxterm-portfolio
+   ```
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-**Why include `.vscode/extensions.json`?**
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   *The server will start, typically at `http://localhost:5173`.*
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   *This will generate a `dist/` directory with the optimized static assets.*
 
-**Why enable `checkJs` in the JS template?**
+## 👤 About Me
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+I am **Rishu Raj**, a 17-year-old tech enthusiast from Haryana, India. I daily drive Linux, write NuShell configs, and spend my time exploring Information Security, ethical hacking, and reverse engineering.
 
-**Why is HMR not preserving my local component state?**
+- **GitHub:** [@TuxTerm](https://github.com/TuxTerm)
+- **LinkedIn:** [Rishu Raj](https://linkedin.com/in/rishuraj0175)
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+---
+*© 2026 Rishu Raj. Powered by Svelte.*
