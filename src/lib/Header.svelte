@@ -52,15 +52,37 @@
   }
 
   nav a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
     border: none;
     color: var(--fg);
     font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+    z-index: 1;
+    transition: color 0.3s ease;
+  }
+
+  nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
   }
 
   nav a:hover {
     color: var(--bg);
-    background-color: var(--accent);
+  }
+
+  nav a:hover::before {
+    transform: scaleX(1);
   }
 
   @media (max-width: 768px) {
