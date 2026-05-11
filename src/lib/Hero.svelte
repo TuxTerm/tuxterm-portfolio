@@ -1,7 +1,16 @@
+<script>
+  const calculateAge = (dob) => {
+    const diffMs = Date.now() - new Date(dob).getTime();
+    const ageDt = new Date(diffMs); 
+    return Math.abs(ageDt.getUTCFullYear() - 1970);
+  };
+  const age = calculateAge('2001-12-04');
+</script>
+
 <section id="about">
   <h1><span class="highlight">sudo whoami</span></h1>
   <p>
-    Hey there! I'm <strong>Rishu Raj</strong>. I'm a 17-year-old carbon-based lifeform operating out of Haryana, India. I spend most of my time trying to make computers do things they weren't strictly designed to do (legally, of course) and figuring out how to stop others from doing the same. 
+    Hey there! I'm <strong>Rishu Raj</strong>. I'm a {age}-year-old carbon-based lifeform operating out of Haryana, India. I spend most of my time trying to make computers do things they weren't strictly designed to do (legally, of course) and figuring out how to stop others from doing the same. 
   </p>
 
   <h3>The Tech Side</h3>
