@@ -8,7 +8,7 @@
 </script>
 
 <section id="about">
-  <h1><span class="highlight">sudo whoami</span></h1>
+  <h1><span class="highlight">^_^ sudo whoami</span></h1>
   <p>
     Hey there! I'm <strong>Rishu Raj</strong>. I'm a {age}-year-old carbon-based lifeform operating out of Haryana, India. I spend most of my time trying to make computers do things they weren't strictly designed to do (legally, of course) and figuring out how to stop others from doing the same. 
   </p>
@@ -42,5 +42,10 @@
     color: var(--bg);
     padding: 0.2rem 0.5rem;
     display: inline-block;
+  }
+
+  h3 {
+    text-decoration: underline dotted var(--accent) 2px;
+    text-underline-offset: 6px;
   }
 </style>
