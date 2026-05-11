@@ -1,18 +1,17 @@
 <section id="about">
-  <h1><span class="highlight">^_^ Hello World.</span></h1>
+  <h1><span class="highlight">sudo whoami</span></h1>
   <p>
-    Hey, there! I'm <strong>Rishu Raj</strong>. I am an organized mess of some random molecules existing to form something called 'life' in human form.
+    Hey there! I'm <strong>Rishu Raj</strong>. I'm a 17-year-old carbon-based lifeform operating out of Haryana, India. I spend most of my time trying to make computers do things they weren't strictly designed to do (legally, of course) and figuring out how to stop others from doing the same. 
   </p>
 
   <h3>The Tech Side</h3>
   <p>
-    The neurons in my brain are very crazy about logical stuff.<br/>
-    I do and turn on computers and linux. I like programming and testing out random stuff on Linux.
+    My brain runs on a highly customized logic engine. When I'm not studying Information Security, I'm deep into ethical hacking, reverse engineering, and trying to figure out why the network went down (spoiler: it's always DNS). I break things on purpose so bad guys can't break them by accident.
   </p>
 
   <h3>My System</h3>
   <p>
-    I use Linux on my system. A detailed description of applications and tools I use is available at <a href="#/tools">Tools</a>.
+    I daily drive Linux because I enjoy having absolute control and the occasional thrill of fixing a broken bootloader. You can inspect my current loadout, applications, and terminal setup over at <a href="#/tools">Tools</a>.
   </p>
   
   <br/>
