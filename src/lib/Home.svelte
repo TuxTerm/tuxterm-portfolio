@@ -52,18 +52,14 @@
           </a>
           <a href="#/tools" class="link-card" title="Tools & Setup">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 6l-9.5-1L9 3 6.5 1.5 4 3 .5 5l1 9.5L3 21h6l1.5-4.5L12 23l4.5-1.5 3-4 2-6-4-2.5z"></path>
-              <circle cx="12" cy="12" r="1"></circle>
-              <path d="M12 8v8M8 12h8"></path>
+              <path d="M6 17l-3 3M6 4v7a7 7 0 0 0 14 0V4m-3 10l3 3"></path>
+              <rect x="2" y="14" width="20" height="8" rx="1"></rect>
             </svg>
             <span class="label">Tools & Setup</span>
           </a>
           <a href="https://github.com/TuxTerm" target="_blank" rel="noopener noreferrer" class="link-card" title="GitHub Profile">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-              <line x1="9" y1="9" x2="9" y2="9.01"></line>
-              <line x1="15" y1="9" x2="15" y2="9.01"></line>
+              <polygon points="12 2 15.09 10.26 24 10.26 17.55 16.52 19.64 24 12 18.74 4.36 24 6.45 16.52 0 10.26 8.91 10.26 12 2"></polygon>
             </svg>
             <span class="label">GitHub Profile</span>
           </a>
