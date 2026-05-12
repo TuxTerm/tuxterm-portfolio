@@ -15,7 +15,7 @@
 
       <div class="message">
         <p class="coming-soon-text">
-          Something amazing is coming soon. While we prepare, explore my work and projects.
+          Defend your code. Learn continuously. Repeat the process. Explore my journey in software engineering.
         </p>
       </div>
 
