@@ -163,11 +163,38 @@
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     color: var(--fg);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0.1rem 0.3rem;
+    margin-left: -0.3rem;
+    transition: color 0.3s ease;
   }
 
-  .quick-links h2::before {
-    content: "[+] ";
-    color: var(--accent);
+  .quick-links h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--accent);
+    z-index: -1;
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .quick-links:hover h2 {
+    color: var(--bg);
+    transition-delay: 0.1s;
+  }
+
+  .quick-links:hover h2::before {
+    color: var(--bg);
+    transition-delay: 0.1s;
+  }
+
+  .quick-links:hover h2::after {
+    width: 100%;
   }
 
   .links-grid {
