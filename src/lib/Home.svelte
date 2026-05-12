@@ -36,20 +36,31 @@
       <div class="quick-links">
         <h2>Quick Navigation</h2>
         <div class="links-grid">
-          <a href="#/about" class="link-card">
-            <span class="icon">👤</span>
+          <a href="#/about" class="link-card" title="About Me">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
             <span class="label">About Me</span>
           </a>
-          <a href="#/blog" class="link-card">
-            <span class="icon">📝</span>
+          <a href="#/blog" class="link-card" title="Blog & Write-ups">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
             <span class="label">Blog & Write-ups</span>
           </a>
-          <a href="#/tools" class="link-card">
-            <span class="icon">🛠️</span>
+          <a href="#/tools" class="link-card" title="Tools & Setup">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 0-8.94-8.94l-3.77 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77z"></path>
+              <path d="M9.3 17.7a1 1 0 0 0 0-1.4L7.7 14.7a1 1 0 0 0-1.4 0l-3.77 3.77a6 6 0 0 0 8.94 8.94l3.77-3.77a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.77 3.77z"></path>
+            </svg>
             <span class="label">Tools & Setup</span>
           </a>
-          <a href="https://github.com/TuxTerm" target="_blank" rel="noopener noreferrer" class="link-card">
-            <span class="icon">🐙</span>
+          <a href="https://github.com/TuxTerm" target="_blank" rel="noopener noreferrer" class="link-card" title="GitHub Profile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-.975-2.438 3.75 3.75 0 0 1 .6-6.438c.405-.043.789-.057 1.168-.057a4.5 4.5 0 0 1 4.482 4.6c0 1.677-.7 3.282-1.881 4.406M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path>
+            </svg>
             <span class="label">GitHub Profile</span>
           </a>
         </div>
@@ -219,7 +230,7 @@
     padding: 1.5rem;
     background-color: var(--bg);
     border: 2px solid var(--border);
-    border-radius: 8px;
+    border-radius: 0;
     text-decoration: none;
     color: var(--fg);
     transition: all 0.3s ease;
@@ -238,7 +249,15 @@
   }
 
   .icon {
-    font-size: 2rem;
+    width: 32px;
+    height: 32px;
+    color: var(--accent);
+    transition: all 0.3s ease;
+  }
+
+  .link-card:hover .icon {
+    color: var(--accent);
+    transform: scale(1.1);
   }
 
   .label {
