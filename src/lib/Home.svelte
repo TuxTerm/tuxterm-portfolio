@@ -1,17 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
-
-  let dotCount = $state(0);
-
-  onMount(() => {
-    const interval = setInterval(() => {
-      dotCount = (dotCount + 1) % 4;
-    }, 500);
-
-    return () => clearInterval(interval);
-  });
-
-  const getDots = () => '.'.repeat(dotCount);
 </script>
 
 <section id="home" class="coming-soon">
@@ -23,8 +10,7 @@
       </h1>
 
       <div class="loading-animation">
-        <div class="spinner"></div>
-        <p class="loading-text">Initializing portfolio{getDots()}</p>
+        <img src="/Punch.png" alt="Fortran punch card - DEFEND LEARN REPEAT" class="punch-card" />
       </div>
 
       <div class="message">
@@ -128,30 +114,30 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    justify-content: center;
   }
 
-  .spinner {
-    width: 50px;
-    height: 50px;
-    border: 3px solid var(--border);
-    border-top: 3px solid var(--accent);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  .punch-card {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border: 2px solid var(--border);
+    padding: 1rem;
+    background-color: var(--bg);
+    animation: fadeInUp 0.8s ease-out;
+    filter: drop-shadow(0 4px 12px var(--shadow));
   }
 
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
-  }
-
-  .loading-text {
-    color: var(--fg);
-    font-size: 1.1rem;
-    font-family: 'Fira Code', monospace;
-    font-weight: 500;
-    min-width: 200px;
-    text-align: center;
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .message {
