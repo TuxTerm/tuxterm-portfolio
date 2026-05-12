@@ -2,11 +2,8 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import Header from './lib/Header.svelte';
-  import Hero from './lib/Hero.svelte';
-  import Experience from './lib/Experience.svelte';
-  import Skills from './lib/Skills.svelte';
-  import Projects from './lib/Projects.svelte';
-  import Contact from './lib/Contact.svelte';
+  import Home from './lib/Home.svelte';
+  import About from './lib/About.svelte';
   import Blog from './lib/Blog.svelte';
   import Tools from './lib/Tools.svelte';
 
@@ -21,6 +18,8 @@
     return () => window.removeEventListener('hashchange', handleHashChange);
   });
 
+  let isHome = $derived(currentHash === '#/' || currentHash === '');
+  let isAbout = $derived(currentHash === '#/about');
   let isBlog = $derived(currentHash === '#/blog');
   let isTools = $derived(currentHash === '#/tools');
   let currentView = $derived(currentHash);
@@ -30,16 +29,16 @@
 <div class="container">
   {#key currentView}
     <main in:fade={{ duration: 300 }}>
-      {#if isBlog}
+      {#if isHome}
+        <Home />
+      {:else if isAbout}
+        <About />
+      {:else if isBlog}
         <Blog />
       {:else if isTools}
         <Tools />
       {:else}
-        <Hero />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Home />
       {/if}
     </main>
   {/key}
