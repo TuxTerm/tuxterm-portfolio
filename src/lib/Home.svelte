@@ -52,14 +52,18 @@
           </a>
           <a href="#/tools" class="link-card" title="Tools & Setup">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 0-8.94-8.94l-3.77 3.77a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77z"></path>
-              <path d="M9.3 17.7a1 1 0 0 0 0-1.4L7.7 14.7a1 1 0 0 0-1.4 0l-3.77 3.77a6 6 0 0 0 8.94 8.94l3.77-3.77a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-3.77 3.77z"></path>
+              <path d="M23 6l-9.5-1L9 3 6.5 1.5 4 3 .5 5l1 9.5L3 21h6l1.5-4.5L12 23l4.5-1.5 3-4 2-6-4-2.5z"></path>
+              <circle cx="12" cy="12" r="1"></circle>
+              <path d="M12 8v8M8 12h8"></path>
             </svg>
             <span class="label">Tools & Setup</span>
           </a>
           <a href="https://github.com/TuxTerm" target="_blank" rel="noopener noreferrer" class="link-card" title="GitHub Profile">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-.975-2.438 3.75 3.75 0 0 1 .6-6.438c.405-.043.789-.057 1.168-.057a4.5 4.5 0 0 1 4.482 4.6c0 1.677-.7 3.282-1.881 4.406M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9" y2="9.01"></line>
+              <line x1="15" y1="9" x2="15" y2="9.01"></line>
             </svg>
             <span class="label">GitHub Profile</span>
           </a>
