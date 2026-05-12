@@ -171,6 +171,12 @@
     transition: color 0.3s ease;
   }
 
+  .quick-links h2::before {
+    content: "[+] ";
+    color: var(--accent);
+    transition: color 0.3s ease;
+  }
+
   .quick-links h2::after {
     content: "";
     position: absolute;
