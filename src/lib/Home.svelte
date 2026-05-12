@@ -120,11 +120,8 @@
   .punch-card {
     max-width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 450px;
     object-fit: contain;
-    border: 2px solid var(--border);
-    padding: 1rem;
-    background-color: var(--bg);
     animation: fadeInUp 0.8s ease-out;
     filter: drop-shadow(0 4px 12px var(--shadow));
   }
